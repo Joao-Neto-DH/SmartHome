@@ -1,0 +1,115 @@
+:root{
+    --color-primary: #242e42;
+    --color-secondary: #2f3b52;
+    --color-tertiary: #1f8efa;
+    --color-text: #fff;
+    --border-color: #20293c;
+    --fs: .9rem;
+    --padding: .5rem;
+}
+*{
+    color: var(--color-text);
+    font-family: Roboto;
+    font-size: var(--fs);
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+p{margin: 0;}
+button, .btn{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: var(--padding);
+}
+.dark-theme{
+    background-color: var(--color-primary);
+}
+.container{
+    padding: calc(var(--padding)*3) calc(var(--padding)*6);
+}
+header{
+    border-bottom: 1px solid #20293c;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+}
+.navbar .navbar-brand{
+    padding-right: calc(var(--padding)*2);
+}
+
+/* Conteudo principal */
+.main{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: calc(var(--padding)*4) 0;
+}
+.main-content{
+    --w: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.menu{
+    width: calc(var(--w) - 85%);
+}
+.content{
+    width: calc(var(--w) - 20%);
+}
+
+/*User*/
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: calc(var(--padding)*2);
+}
+.user-img{
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.user-text{
+    opacity: 60%;
+    margin-top: var(--padding);
+}
+.user-name{
+    font-size: calc(var(--fs)*1.4);
+    text-decoration: none;
+}
+
+/*Nav*/
+.nav{
+    padding: 0;
+    list-style: none;
+}
+.nav p{display: inline}
+.nav .nav-link{
+    display: block;
+    padding: calc(var(--padding) * 2) calc(var(--padding) * 4);
+    text-decoration: none;
+}
+.nav-link .nav-icon{padding-right: 8px}
+.nav-item.active{
+    background: #212a3d;
+    overflow: hidden;
+    border-left: 4px solid var(--color-tertiary);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.nav-item.active .nav-link{
+    padding-left: calc(var(--padding) * 4 - 4px);
+}
+.nav-item.active .nav-link *{
+    color: var(--color-tertiary);
+}
