@@ -189,8 +189,7 @@ header{
     width: 100px;
     height: 100px;
     background-color: rgba(255,255,255,.1);
-    margin: 20px auto 8px;
-    overflow: hidden;
+    margin: 30px auto;
     position: relative;
 }
 .limit-device-chart{
@@ -211,6 +210,7 @@ header{
     border: 10px solid transparent;
     border-left: 10px solid var(--color-tertiary);
 }
+
 .limit-chart::before, .limit-chart::after{
     content: '';
     position: absolute;
@@ -237,6 +237,7 @@ header{
     -o-transform: translate(47%, -18%);
     transform: translate(47%, -18%);
 }
+
 .limit-chart:nth-child(1){
     --deg: 90deg;
     -webkit-transform: rotate(var(--deg));
@@ -254,13 +255,73 @@ header{
     transform: rotate(var(--deg));
 }
 
+.limit-device-count{
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: rgba(0,0,0,.5);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.limit-device-count-value{
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.device-online{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    padding: calc(var(--padding)/2);
+    background-color: var(--color-tertiary);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: translate(35%, -25%);
+    -moz-transform: translate(35%, -25%);
+    -ms-transform: translate(35%, -25%);
+    -o-transform: translate(35%, -25%);
+    transform: translate(35%, -25%);
+    border: 3px solid rgba(0,0,0,.8);
+}
+
+.btn-see{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: calc(var(--padding)/4) var(--padding);
+    margin-bottom: var(--padding);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 8px;
+    text-transform: uppercase;
+    background-color: rgba(255,255,255,.2);
+}
+
 /*View camera*/
 .camera-view{
     position: relative;
 }
 .camera-view-header{
     position: absolute;
-    width: calc(100% - 60px);
+    width: 100%;
     top: 5%;
     left: 0;
     padding: 0 30px;

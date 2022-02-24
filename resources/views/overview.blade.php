@@ -77,11 +77,16 @@
                                 {{--EndChart--}}
 
                                 <div class="limit-device-count">
-                                    10
+                                    <div class="limit-device-count-value">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="device-online">
+                                    5
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="btn">Ver Mais</a>
+                        <a href="#" class="btn btn-see">Ver Mais</a>
                     </div>
                 </div>
             </div>
