@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{str_replace('_','-',app()->getlocale())}}">
+<html lang="{{str_replace('_','-',app()->getlocale())}}" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
         <div class="container">
             <div class="navbar">
                 <div class="navbar-group">
-                    <img src="#" alt="Smarthome logo" class="navbar-brand">
+                    <img src="/asset/img/logo.svg" alt="Smarthome logo" width="150" class="navbar-brand">
                     <button class="navbar-toggle">Toogle</button>
                 </div>
                 <div class="navbar-group">
@@ -25,7 +25,7 @@
         <div class="main-content">
             <aside class="menu">
                 <div class="user">
-                    <img src="/asset/img/user.jpg" alt="User Image" class="user-img">
+                    <img src="/asset/img/home.svg" alt="User Image" class="user-img shadow">
                     <a href="#" class="user-name user-text">My Home</a>
                     <p class="user-adress user-text">Luanda/Viana casa nº123</p>
                 </div>
@@ -60,9 +60,7 @@
                 @yield('content')
             </main>
         </div>
-        <div class="main-quick-acess">
-            quick acess
-        </div>
+        @yield('quick-acess')
     </div>
     @yield('js')
 </body>
