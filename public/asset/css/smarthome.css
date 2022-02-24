@@ -39,7 +39,7 @@ button, .btn{
     text-decoration: none;
 }
 header{
-    border-bottom: 1px solid #20293c;
+    border-bottom: 1px solid #161d2a;
 }
 .dark-theme{
     background-color: var(--color-primary);

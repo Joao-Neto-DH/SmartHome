@@ -33,7 +33,7 @@
                                     </div>
                                 </div>
                             </div>
-                            Recording
+                            Gravando
                         </div>
                     </div>
                     <img src="/asset/img/room.svg" alt="Sample camera view" class="camera-video">
