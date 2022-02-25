@@ -50,14 +50,48 @@
                 </div>
 
                 <div class="board-row">
+                    {{-- Consumo por dia --}}
                     <div class="board-body">
                         <div class="board-header">
                             <h2 class="h6">Consumo por dia</h2>
                             <button class="btn">Details</button>
                         </div>
-                        ss
+                        <div class="consumo consumo-diario">
+                            <div class="chart-pane">
+                                <div class="consumo-chart">
+                                    <span class="consumo-chart-bar"></span>
+                                    <span class="consumo-chart-bar-text">Seg</span>
+                                </div>
+                                <div class="consumo-chart active">
+                                    <span class="consumo-chart-bar"></span>
+                                    <span class="consumo-chart-bar-text">Ter</span>
+                                </div>
+                                <div class="consumo-chart active">
+                                    <span class="consumo-chart-bar"></span>
+                                    <span class="consumo-chart-bar-text">Qua</span>
+                                </div>
+                                <div class="consumo-chart active">
+                                    <span class="consumo-chart-bar"></span>
+                                    <span class="consumo-chart-bar-text">Qui</span>
+                                </div>
+                                <div class="consumo-chart">
+                                    <span class="consumo-chart-bar"></span>
+                                    <span class="consumo-chart-bar-text">Sex</span>
+                                </div>
+                                <div class="consumo-chart active">
+                                    <span class="consumo-chart-bar"></span>
+                                    <span class="consumo-chart-bar-text">Sab</span>
+                                </div>
+                                <div class="consumo-chart">
+                                    <span class="consumo-chart-bar"></span>
+                                    <span class="consumo-chart-bar-text">Dom</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-see">Ver Mais</a>
                     </div>
 
+                    {{-- Limite de dispositivos --}}
                     <div class="board-body">
                         <div class="board-header">
                             <h2 class="h6">Limite de dispositivos</h2>

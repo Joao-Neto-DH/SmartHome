@@ -45,7 +45,7 @@ header{
     background-color: var(--color-primary);
 }
 .container{
-    padding: calc(var(--padding)*3) calc(var(--padding)*6);
+    padding: calc(var(--padding)*2) calc(var(--padding)*6);
 }
 .navbar{
     display: flex;
@@ -178,6 +178,71 @@ header{
     background: var(--color-secondary);
     padding: calc(var(--padding) / 2);
 }
+
+/*Consumo por dia*/
+.consumo-diario{
+    margin: 30px 0;
+}
+.chart-pane{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.consumo-chart{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    grid-row-gap: 20px;
+}
+.consumo-chart > span{
+    display: block;
+    font-size: calc(var(--fs)/1.5);
+}
+.consumo-chart > span:first-child{
+    height: 20px;
+    width: 10px;
+    position: relative;
+    border-radius: 50px;
+}
+.consumo-chart > span:first-child::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    bottom: 0;
+    left: 0;
+    transform: translateY(150%);
+}
+.consumo-chart > span:first-child::before,.consumo-chart > span:first-child{
+    background-color: rgba(255,255,255,.1);
+}
+.consumo-chart.active > span:first-child::before,.consumo-chart.active > span:first-child{
+    background-color: var(--color-tertiary);
+}
+.consumo-chart:nth-child(2) > span:first-child{
+    height: 40px;
+}
+.consumo-chart:nth-child(3) > span:first-child{
+    height: 70px;
+}
+.consumo-chart:nth-child(4) > span:first-child{
+    height: 55px;
+}
+.consumo-chart:nth-child(5) > span:first-child{
+    height: 50px;
+}
+.consumo-chart:nth-child(6) > span:first-child{
+    height: 53px;
+}
+.consumo-chart:nth-child(7) > span:first-child{
+    height: 30px;
+}
+
 
 /*Limit device chart*/
 .limit-device, .limit-chart{
