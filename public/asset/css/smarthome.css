@@ -179,10 +179,134 @@ header{
     padding: calc(var(--padding) / 2);
 }
 
-/*Consumo por dia*/
-.consumo-diario{
-    margin: 30px 0;
+/* Comum entre os gráficos */
+.limit-device, .consumo-diario, .consumo-compartimento{
+    margin: 15px 0 30px;
 }
+
+/*Consumo por quarto*/
+.consumo{
+    justify-content: space-around;
+    align-items: center;
+}
+.consumo-compartimento{
+    position: relative;
+}
+.consumo-compartimento .chart-pane{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+}
+.chart-pane .chart-bar{
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 50%;
+    height: 110%;
+    transform-origin: right center;
+}
+.chart-pane .chart-bar:nth-child(1){
+    background-color: #05c985;
+    transform: rotate(0deg);
+}
+.chart-pane .chart-bar:nth-child(2){
+    background-color: #ffab4f;
+    transform: rotate(45deg);
+}
+.chart-pane .chart-bar:nth-child(3){
+    background-color: #ee423d;
+    transform: rotate(-160deg);
+}
+.chart-pane .chart-bar:nth-child(4){
+    background-color: #843fa0;
+    transform: rotate(80deg);
+}
+.chart-pane .chart-bar:nth-child(5){
+    background-color: #1f8efa;
+    transform: rotate(150deg) translate(-10%);
+}
+
+.chart-value{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.chart-value .value{
+    font-size: calc(var(--fs)*1.5);
+    font-weight: 100;
+}
+.chart-value .unity{
+    font-weight: 100;
+}
+
+.consumo-compartimento-descricao ul{
+    min-width: 150px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 0;
+}
+.consumo-compartimento-descricao li{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 100;
+}
+.consumo-compartimento-descricao .room{
+    margin-left: 10px;
+}
+.consumo-compartimento-descricao .percent{
+    margin-left: auto;
+}
+.consumo-compartimento-descricao li:before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.consumo-compartimento-descricao li:nth-child(1):before{
+    background-color: #05c985;
+}
+.consumo-compartimento-descricao li:nth-child(2):before{
+    background-color: #ffab4f;
+}
+.consumo-compartimento-descricao li:nth-child(3):before{
+    background-color: #ee423d;
+}
+.consumo-compartimento-descricao li:nth-child(4):before{
+    background-color: #843fa0;
+}
+.consumo-compartimento-descricao li:nth-child(5):before{
+    background-color: #1f8efa;
+}
+
+
+/*Consumo por dia*/
 .chart-pane{
     display: flex;
     justify-content: space-evenly;
@@ -249,13 +373,15 @@ header{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    cursor: pointer;
 }
 .limit-device{
     width: 100px;
     height: 100px;
     background-color: rgba(255,255,255,.1);
-    margin: 30px auto;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 .limit-device-chart{
     position: absolute;
@@ -348,6 +474,9 @@ header{
 }
 
 .device-online{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 25px;
     height: 25px;
     text-align: center;
@@ -424,8 +553,8 @@ header{
     border: 1px solid rgba(255,255,255,1);
 }
 .camera-recording .circ-3{
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -442,6 +571,6 @@ header{
 /*Animation*/
 @keyframes recording {
     from{opacity: 1}
-    50%{opacity: .5}
+    50%{opacity: .3}
     to{opacity: 1}
 }

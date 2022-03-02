@@ -46,11 +46,36 @@
                         <h2 class="h6">Consumo por quarto</h2>
                         <button class="btn">Details</button>
                     </div>
-                    dd
+
+                    {{-- Gráfico de Consumo por quarto --}}
+                    <div class="consumo board-row">
+                        <div class="consumo-compartimento">
+                            <div class="chart-pane">
+                                <div class="chart-bar"></div>
+                                <div class="chart-bar"></div>
+                                <div class="chart-bar"></div>
+                                <div class="chart-bar"></div>
+                                <div class="chart-bar"></div>
+                            </div>
+                            <div class="chart-value">
+                                <span class="value">304.5</span>
+                                <span class="unity">Watts</span>
+                            </div>
+                        </div>
+                        <div class="consumo-compartimento-descricao">
+                            <ul>
+                                <li><span class="room">Sala de Estar</span><span class="percent">4.9%</span></li>
+                                <li><span class="room">Estudio</span><span class="percent">6.1%</span></li>
+                                <li><span class="room">Quarto do João</span><span class="percent">20%</span></li>
+                                <li><span class="room">Garagem</span><span class="percent">27%</span></li>
+                                <li><span class="room">Cozinha</span><span class="percent">42%</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="board-row">
-                    {{-- Consumo por dia --}}
+                    {{-- Gráfico de Consumo por dia --}}
                     <div class="board-body">
                         <div class="board-header">
                             <h2 class="h6">Consumo por dia</h2>
@@ -91,7 +116,7 @@
                         <a href="#" class="btn btn-see">Ver Mais</a>
                     </div>
 
-                    {{-- Limite de dispositivos --}}
+                    {{-- Gráfico de Limite de dispositivos --}}
                     <div class="board-body">
                         <div class="board-header">
                             <h2 class="h6">Limite de dispositivos</h2>
