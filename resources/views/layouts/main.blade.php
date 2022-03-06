@@ -32,26 +32,44 @@
                 <ul class="nav">
                     <li class="nav-item active">
                         <a href="#" class="nav-link">
-                            <span class="nav-icon"></span>
-                            <p class="nav-text">Overview</p>
+                            <span class="nav-icon"><img src="/asset/img/home-icon.svg" alt="home icon"></span>
+                            <p class="nav-text">Home</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <span class="nav-icon"></span>
-                            <p class="nav-text">Overview</p>
+                            <span class="nav-icon"><img src="/asset/img/device-icon.svg" alt="device icon"></span>
+                            <p class="nav-text">Dispositivos</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <span class="nav-icon"></span>
-                            <p class="nav-text">Overview</p>
+                            <span class="nav-icon"><img src="/asset/img/chart-icon.svg" alt="analytics icon"></span>
+                            <p class="nav-text">Analíticos</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <span class="nav-icon"></span>
-                            <p class="nav-text">Overview</p>
+                            <span class="nav-icon"><img src="/asset/img/rule-icon.svg" alt="rule icon"></span>
+                            <p class="nav-text">Réguas</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon"><img src="/asset/img/gallery-icon.svg" alt="gallery icon"></span>
+                            <p class="nav-text">Galeria</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon"><img src="/asset/img/history-icon.svg" alt="history icon"></span>
+                            <p class="nav-text">Histórico</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-icon"><img src="/asset/img/settings-icon.svg" alt="settings icon"></span>
+                            <p class="nav-text">Definições</p>
                         </a>
                     </li>
                 </ul>

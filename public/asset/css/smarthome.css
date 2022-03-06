@@ -112,11 +112,19 @@ header{
 }
 .nav p{display: inline}
 .nav .nav-link{
-    display: block;
-    padding: calc(var(--padding) * 2) calc(var(--padding) * 4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: calc(var(--padding) * 1.5) calc(var(--padding) * 4);
     text-decoration: none;
+    font-weight: 100;
 }
-.nav-link .nav-icon{padding-right: 8px}
+.nav-link .nav-icon{
+    padding-right: 8px
+}
+.nav-icon img{
+    width: 20px;
+}
 .nav-item.active{
     background: #212a3d;
     overflow: hidden;

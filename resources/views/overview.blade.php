@@ -3,6 +3,7 @@
 @section('title', 'SmartHome')
 
 @section('content')
+    {{-- Live da câmara --}}
     <div class="board-column">
         <div class="board-row">
             <section class="board-body">
@@ -39,7 +40,7 @@
                     <img src="/asset/img/room.svg" alt="Sample camera view" class="camera-video">
                 </div>
             </section>
-
+            {{-- Gráficos --}}
             <div class="board-column">
                 <div class="board-body">
                     <div class="board-header">
@@ -149,6 +150,7 @@
                     </div>
                 </div>
             </div>
+            {{-- Fim dos gráficos --}}
         </div>
 
         <div class="board-row">
@@ -157,7 +159,18 @@
                     <h2 class="h6">Estatus por Unidade</h2>
                     <button class="btn">Details</button>
                 </div>
-                <button class="btn">See</button>
+                <ul class="status-bar">
+                    <li class="status-bar-item">
+                        <span class="status-place">Sala de Estar</span>
+                        <div class="status-info">
+                            <p class="status-value">745</p>
+                            <span class="status-icon">
+                                <span class="status-icon-unity"></span>
+                                <span class="status-icon-grow"></span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
             </section>
         </div>
     </div>
