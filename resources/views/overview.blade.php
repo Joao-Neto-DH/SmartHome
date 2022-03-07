@@ -147,16 +147,8 @@
                     <button class="btn">Details</button>
                 </div>
                 <ul class="status-bar">
-                    <li class="status-bar-item">
-                        <span class="status-place">Sala de Estar</span>
-                        <div class="status-info">
-                            <p class="status-value">745</p>
-                            <span class="status-icon">
-                                <span class="status-icon-unity"></span>
-                                <span class="status-icon-grow"></span>
-                            </span>
-                        </div>
-                    </li>
+                    <x-status-bar place="Sala de Estar" value="745">
+                    </x-status-bar>
                 </ul>
             </section>
         </div>
