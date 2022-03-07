@@ -42,13 +42,8 @@
             </section>
             {{-- Gráficos --}}
             <div class="board-column">
-                <div class="board-body">
-                    <div class="board-header">
-                        <h2 class="h6">Consumo por quarto</h2>
-                        <button class="btn">Details</button>
-                    </div>
-
-                    {{-- Gráfico de Consumo por quarto --}}
+                {{-- Gráfico de Consumo por quarto --}}
+                <x-graphic-board title="Consumo por quarto">
                     <div class="consumo board-row">
                         <div class="consumo-compartimento">
                             <div class="chart-pane">
@@ -73,15 +68,11 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </x-graphic-board>
 
                 <div class="board-row">
                     {{-- Gráfico de Consumo por dia --}}
-                    <div class="board-body">
-                        <div class="board-header">
-                            <h2 class="h6">Consumo por dia</h2>
-                            <button class="btn">Details</button>
-                        </div>
+                    <x-graphic-board title="Consumo por dia">
                         <div class="consumo consumo-diario">
                             <div class="chart-pane">
                                 <div class="consumo-chart">
@@ -115,14 +106,10 @@
                             </div>
                         </div>
                         <a href="#" class="btn btn-see">Ver Mais</a>
-                    </div>
+                    </x-graphic-board>
 
                     {{-- Gráfico de Limite de dispositivos --}}
-                    <div class="board-body">
-                        <div class="board-header">
-                            <h2 class="h6">Limite de dispositivos</h2>
-                            <button class="btn">Details</button>
-                        </div>
+                    <x-graphic-board title="Limite de dispositivos">
                         <div class="limit-device">
                             <div class="limit-device-chart">
                                 {{--Chart--}}
@@ -147,7 +134,7 @@
                             </div>
                         </div>
                         <a href="#" class="btn btn-see">Ver Mais</a>
-                    </div>
+                    </x-graphic-board>
                 </div>
             </div>
             {{-- Fim dos gráficos --}}

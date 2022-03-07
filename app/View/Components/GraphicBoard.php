@@ -7,7 +7,7 @@ use Illuminate\View\Component;
 class GraphicBoard extends Component
 {
     /**
-     * @var String $title título do gráfico
+     * @var string $title título do gráfico
      */
     public $title;
     /**
@@ -15,9 +15,9 @@ class GraphicBoard extends Component
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($title)
     {
-        //
+        $this->title = $title;
     }
 
     /**
