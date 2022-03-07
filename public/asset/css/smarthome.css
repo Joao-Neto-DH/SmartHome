@@ -576,6 +576,35 @@ header{
     width: 100%;
 }
 
+/* Estilizando componente de status */
+ul.status-bar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+    padding: 0 var(--padding);
+}
+.status-bar .status-bar-item{
+    padding: calc(var(--padding) * 1.5) calc(var(--padding) * 2);
+}
+.status-bar .status-place{
+    font-size: calc(var(--fs) / 1.2);
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: calc(var(--padding) / 3);
+}
+.status-bar .status-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.status-bar .status-value{
+    font-size: calc(var(--fs) * 3.5);
+    font-weight: 300;
+    line-height: 1;
+}
+
 /*Animation*/
 @keyframes recording {
     from{opacity: 1}

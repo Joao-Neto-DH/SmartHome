@@ -25,7 +25,7 @@
         <div class="main-content">
             <aside class="menu">
                 <div class="user">
-                    <img src="/asset/img/home.svg" alt="User Image" class="user-img shadow">
+                    <img src="/asset/img/user.svg" alt="User Image" class="user-img shadow">
                     <a href="#" class="user-name user-text">My Home</a>
                     <p class="user-adress user-text">Luanda/Viana casa nº123</p>
                 </div>
