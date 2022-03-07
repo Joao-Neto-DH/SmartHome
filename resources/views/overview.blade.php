@@ -147,8 +147,15 @@
                     <button class="btn">Details</button>
                 </div>
                 <ul class="status-bar">
-                    <x-status-bar place="Sala de Estar" value="745">
-                    </x-status-bar>
+                    <x-status-bar place="Sala de Estar" value="745" unity="W" grow="&DownArrow;"/>
+                    <li class="divider"></li>
+                    <x-status-bar place="Fora" value="20.0" unity="ºC" grow="&UpArrow;"/>
+                    <li class="divider"></li>
+                    <x-status-bar place="Dentro" value="15.3" unity="ºC" grow="&UpArrow;"/>
+                    <li class="divider"></li>
+                    <x-status-bar place="Água" value="495" unity="CF" grow="&DownArrow;"/>
+                    <li class="divider"></li>
+                    <x-status-bar place="Internet" value="45.3" unity="MBPS" grow="&UpArrow;"/>
                 </ul>
             </section>
         </div>
