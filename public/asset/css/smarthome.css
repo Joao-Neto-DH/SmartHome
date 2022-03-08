@@ -622,6 +622,42 @@ ul.status-bar{
     font-size: 10px;
 }
 
+/* Menu de acesso rápido */
+.separator{
+    width: 100%;
+    border-top: 2px solid rgba(255,255,255,.3);
+    margin: calc(var(--padding) * 5) 0;
+    position: relative;
+}
+.separator .btn{
+    position: absolute;
+    --w: 20px;
+    width: var(--w);
+    height: var(--w);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: var(--color-tertiary);
+    box-shadow: 0 0 6px rgba(0,0,0,.3);
+}
+.separator .btn::after, .separator .btn::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    border: 5px solid transparent;
+    border-top: 5px solid #fff;
+}
+.separator .btn::after{
+    border-top: 5px solid var(--color-tertiary);
+    top: 40%;
+    left: 50%;
+}
+
+
+
 /*Animation*/
 @keyframes recording {
     from{opacity: 1}

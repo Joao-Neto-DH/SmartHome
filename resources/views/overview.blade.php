@@ -140,6 +140,7 @@
             {{-- Fim dos gráficos --}}
         </div>
 
+        {{-- Estatos por unidade --}}
         <div class="board-row">
             <section class="board-body" style="width: 100%;">
                 <div class="board-header">
@@ -163,6 +164,9 @@
 @endsection
 
 @section('quick-acess')
+    <div class="separator">
+        <button type="button" class="btn"></button>
+    </div>
     <div class="main-quick-acess">
         quick acess
     </div>
