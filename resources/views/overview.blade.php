@@ -164,9 +164,13 @@
 @endsection
 
 @section('quick-acess')
+    <input type="checkbox" name="hide-acess" id="hide-acess">
+
     <div class="separator">
-        <button type="button" class="btn"></button>
+        <label for="hide-acess" class="btn">
+        </label>
     </div>
+    
     <div class="main-quick">
         <div class="add-quick-acess">
             <button type="button" class="btn">+</button>

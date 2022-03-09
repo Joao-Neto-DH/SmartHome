@@ -151,7 +151,7 @@ header{
 .nav-item.active .nav-link{
     padding-left: calc(var(--padding) * 4 - 4px);
 }
-.nav-item.active .nav-link *{
+.nav-item.active .nav-link *, .nav-item:hover .nav-link *{
     color: var(--color-tertiary);
 }
 
@@ -645,14 +645,14 @@ ul.status-bar{
     margin: calc(var(--padding) * 5) 0;
     position: relative;
 }
-.separator .btn{
+.separator label[for="hide-acess"].btn{
     position: absolute;
-    --w: 20px;
-    width: var(--w);
-    height: var(--w);
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+    --w: 20px;
+    width: var(--w);
+    height: var(--w);
     border-radius: 50%;
     background-color: var(--color-tertiary);
     box-shadow: 0 0 6px rgba(0,0,0,.3);
@@ -662,15 +662,37 @@ ul.status-bar{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -25%);
+    transform: translate(-50%, -10%);
     border: 5px solid transparent;
     border-top: 5px solid #fff;
+    transition: 250ms;
 }
 .separator .btn::after{
     border-top: 5px solid var(--color-tertiary);
     top: 40%;
     left: 50%;
 }
+
+input#hide-acess{
+    display: none;
+}
+input#hide-acess:not(:checked) ~ .main-quick{
+    display: none;
+}
+input#hide-acess:not(:checked) ~ .separator{
+    margin-bottom: 0;
+}
+input#hide-acess:not(:checked) ~ .separator .btn::after,
+input#hide-acess:not(:checked) ~ .separator .btn::before{
+    transform: translate(-50%,-50%) rotate(-180deg);
+}
+input#hide-acess:not(:checked) ~ .separator .btn::before{
+    transform: translate(-50%,-90%) rotate(-180deg);
+}
+input#hide-acess:checked ~ .main-quick{
+    display: flex;
+}
+
 .main-quick{
     display: flex;
     flex-direction: row;
