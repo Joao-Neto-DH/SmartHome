@@ -14,9 +14,11 @@ class AcessMenuItem extends Component
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($title, $img, $since)
     {
-        //
+        $this->title = $title;
+        $this->since = $since; 
+        $this->img   = $img;
     }
 
     /**
