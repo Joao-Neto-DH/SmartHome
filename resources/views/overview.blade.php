@@ -172,17 +172,7 @@
             <button type="button" class="btn">+</button>
         </div>
         <div class="quick-acess">
-            <div class="acess">
-                <input type="checkbox" name="acess" id="acess" class="acess-input" checked>
-                <label for="acess" class="acess-input-text"></label>
-                <div class="acess-body">
-                    <img src="/asset/img/home-icon.svg" class="acess-icon" alt="Acess Icon">
-                    <div class="acess-info">
-                        <h4 class="acess-title">Outlet</h4>
-                        <p class="acess-description">Activo desde<br/>08 de Março de 2022</p>
-                    </div>
-                </div>
-            </div>
+            <x-acess-menu-item title="Outlet" img="/home-icon.svg" since="09 de Março de 2022"/>
         </div>
     </div>
 @endsection
