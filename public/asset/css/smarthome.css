@@ -33,7 +33,7 @@
     box-sizing: border-box;
 }
 h1{
-    font-size: calc(var(--fs)*3);
+    font-size: calc(var(--fs)*2);
 }
 h2{
     font-size: calc(var(--fs)*2.5);
@@ -168,7 +168,7 @@ header{
     padding: calc(var(--padding)/2);
     color: rgba(255,255,255,.5);
 }
-.camera .camera-room.active{
+.camera .camera-room.active, .camera .camera-room:hover{
     color: #fff;
     background-color: var(--color-tertiary);
 }
@@ -177,6 +177,7 @@ header{
     display: flex;
     flex-direction: row;
     column-gap: 10px;
+    align-items: flex-start;
 }
 .board-column{
     display: flex;

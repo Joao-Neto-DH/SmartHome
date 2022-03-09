@@ -4,6 +4,10 @@
 
 @section('content')
     {{-- Live da câmara --}}
+    <div class="board-header" style="margin-bottom: 20px">
+        <h1>Casa</h1>
+        <button class="btn">Settings</button>
+    </div>
     <div class="board-column">
         <div class="board-row">
             <section class="board-body">
@@ -170,7 +174,7 @@
         <label for="hide-acess" class="btn">
         </label>
     </div>
-    
+
     <div class="main-quick">
         <div class="add-quick-acess">
             <button type="button" class="btn">+</button>

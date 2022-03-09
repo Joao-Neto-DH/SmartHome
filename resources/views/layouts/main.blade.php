@@ -38,7 +38,7 @@
                         <li class="nav-item active">
                             <a href="#" class="nav-link">
                                 <span class="nav-icon"><img src="/asset/img/home-icon.svg" alt="home icon"></span>
-                                <p class="nav-text">Home</p>
+                                <p class="nav-text">Casa</p>
                             </a>
                         </li>
                         <li class="nav-item">
