@@ -167,7 +167,22 @@
     <div class="separator">
         <button type="button" class="btn"></button>
     </div>
-    <div class="main-quick-acess">
-        quick acess
+    <div class="main-quick">
+        <div class="add-quick-acess">
+            <button type="button" class="btn">+</button>
+        </div>
+        <div class="quick-acess">
+            <div class="acess">
+                <input type="checkbox" name="acess" id="acess" class="acess-input" checked>
+                <label for="acess" class="acess-input-text"></label>
+                <div class="acess-body">
+                    <img src="/asset/img/home-icon.svg" class="acess-icon" alt="Acess Icon">
+                    <div class="acess-info">
+                        <h4 class="acess-title">Outlet</h4>
+                        <p class="acess-description">Activo desde<br/>08 de Março de 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection

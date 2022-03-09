@@ -655,8 +655,92 @@ ul.status-bar{
     top: 40%;
     left: 50%;
 }
+.main-quick{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    column-gap: 10px;
+}
+.add-quick-acess{
+    border: 1px dashed var(--color-tertiary);
+    border-radius: 6px;
+    margin-left: 10px;
+    padding: calc(var(--padding) * 3);
+}
+.add-quick-acess .btn{
+    background: var(--color-tertiary);
+    border-radius: 50%;
+    font-size: calc(var(--fs) * 2);
+    font-weight: 300;
+    padding: 6px calc(var(--padding) * 2);
+}
+.quick-acess{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
-
+.acess{
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 6px;
+    background: var(--color-secondary);
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+}
+input.acess-input{
+    display: none;
+    margin-left: auto;
+}
+.acess-input-text{
+    width: 30px;
+    display: block;
+    margin-left: auto;
+    padding: 6px 0;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--color-primary);
+}
+.acess-input-text::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    transition: 250ms;
+}
+input.acess-input:checked + .acess-input-text::after{
+    right: 0;
+    background-color: var(--color-tertiary);
+}
+input.acess-input:not(:checked) + .acess-input-text::after{
+    right: 100%;
+    transform: translate(100%, 0);
+    background-color: #6a7588;
+}
+.acess-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    column-gap: 10px;
+}
+img.acess-icon{
+    width: 50px;
+    height: auto;
+}
+.acess .acess-title{
+    margin-bottom: var(--padding);
+    font-weight: 400;
+}
+input:not(:checked) ~ div.acess-body > .acess-info{
+    opacity: .5;
+}
+input:checked ~ div.acess-body .acess-description{
+    color: var(--color-tertiary);
+}
 
 /*Animation*/
 @keyframes recording {
