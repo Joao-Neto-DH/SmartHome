@@ -735,7 +735,7 @@ img.acess-icon{
     margin-bottom: var(--padding);
     font-weight: 400;
 }
-input:not(:checked) ~ div.acess-body > .acess-info{
+input:not(:checked) ~ div.acess-body{
     opacity: .5;
 }
 input:checked ~ div.acess-body .acess-description{
