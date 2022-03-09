@@ -6,6 +6,22 @@
     --border-color: #20293c;
     --fs: .9rem;
     --padding: .5rem;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    background-color: var(--color-primary);
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #2f3b5285;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--color-secondary);
 }
 *{
     color: var(--color-text);
@@ -659,7 +675,7 @@ ul.status-bar{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: stretch;
+    align-items: flex-start;
     column-gap: 10px;
 }
 .add-quick-acess{
@@ -680,6 +696,7 @@ ul.status-bar{
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
+    padding-bottom: 5px;
 }
 
 .acess{

@@ -1,6 +1,6 @@
 <div class="acess">
-    <input type="checkbox" name="acess" id="acess" class="acess-input" checked>
-    <label for="acess" class="acess-input-text"></label>
+    <input type="checkbox" name="acess" id="{{ Str::lower($title)}}" class="acess-input" checked>
+    <label for="{{ Str::lower($title) }}" class="acess-input-text"></label>
     <div class="acess-body">
         <img src="/asset/img{{ $img }}" class="acess-icon" alt="Acess Icon">
         <div class="acess-info">

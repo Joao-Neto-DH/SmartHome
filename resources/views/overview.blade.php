@@ -172,12 +172,12 @@
             <button type="button" class="btn">+</button>
         </div>
         <div class="quick-acess">
-            <x-acess-menu-item title="Outlet" img="/home-icon.svg" since="09 de Março de 2022"/>
-            <x-acess-menu-item title="Outlet" img="/home-icon.svg" since="09 de Março de 2022"/>
-            <x-acess-menu-item title="Outlet" img="/home-icon.svg" since="09 de Março de 2022"/>
-            <x-acess-menu-item title="Outlet" img="/home-icon.svg" since="09 de Março de 2022"/>
-            <x-acess-menu-item title="Outlet" img="/home-icon.svg" since="09 de Março de 2022"/>
-            <x-acess-menu-item title="Outlet" img="/home-icon.svg" since="09 de Março de 2022"/>
+            <x-acess-menu-item title="Outlet1" img="/home-icon.svg" since="09 de Março de 2022"/>
+            <x-acess-menu-item title="Outlet2" img="/home-icon.svg" since="09 de Março de 2022"/>
+            <x-acess-menu-item title="Outlet3" img="/home-icon.svg" since="09 de Março de 2022"/>
+            <x-acess-menu-item title="Outlet4" img="/home-icon.svg" since="09 de Março de 2022"/>
+            <x-acess-menu-item title="Outlet5" img="/home-icon.svg" since="09 de Março de 2022"/>
+            <x-acess-menu-item title="Outlet6" img="/home-icon.svg" since="09 de Março de 2022"/>
         </div>
     </div>
 @endsection
