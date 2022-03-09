@@ -679,9 +679,11 @@ ul.status-bar{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 .acess{
+    min-width: 201.92px;
     margin: 0 15px;
     padding: 10px;
     border-radius: 6px;
