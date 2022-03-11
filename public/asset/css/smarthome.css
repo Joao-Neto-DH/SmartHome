@@ -192,6 +192,7 @@ header{
     align-content: center;
     justify-content: space-between;
     padding: 0 var(--padding);
+    column-gap: 30px;
 }
 .board-header *{font-weight: 100;}
 .board-body, .shadow{

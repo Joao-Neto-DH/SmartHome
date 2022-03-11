@@ -6,9 +6,7 @@
     {{-- Live da câmara --}}
     <div class="board-header" style="margin-bottom: 20px">
         <h1>Casa</h1>
-        <button class="btn">
-            <img src="/asset/img/more-icon.svg" alt="more icon">
-        </button>
+        <button class="btn">Settings</button>
     </div>
     <div class="board-column">
         <div class="board-row">
@@ -21,7 +19,9 @@
                         <button class="camera-room">C3</button>
                         <button class="camera-room">C4</button>
                     </div>
-                    <button class="btn">Details</button>
+                    <button class="btn">
+                        <img src="/asset/img/more-icon.svg" alt="more icon">
+                    </button>
                 </div>
                 <div class="camera-view">
                     <div class="camera-view-header board-header">
