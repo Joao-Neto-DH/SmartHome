@@ -151,7 +151,9 @@
             <section class="board-body" style="width: 100%;">
                 <div class="board-header">
                     <h2 class="h6">Estatus por Unidade</h2>
-                    <button class="btn">Details</button>
+                    <button class="btn">
+                        <img src="/asset/img/more-icon.svg" alt="more icon">
+                    </button>
                 </div>
                 <ul class="status-bar">
                     <x-status-bar place="Sala de Estar" value="745" unity="W" grow="&DownArrow;"/>
