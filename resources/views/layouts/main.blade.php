@@ -17,7 +17,9 @@
             <div class="navbar">
                 <div class="navbar-group">
                     <img src="/asset/img/logo.svg" alt="Smarthome logo" width="150" class="navbar-brand">
-                    <button class="navbar-toggle">Toogle</button>
+                    <button class="navbar-toggle">
+                        <img src="/asset/img/menu-icon.svg" alt="menu icon">
+                    </button>
                 </div>
                 <div class="navbar-group">
                     Other functionality
