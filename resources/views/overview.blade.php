@@ -33,7 +33,7 @@
                                 11:46
                             </div>
                         </div>
-                        <div class="camera-recording board-header">
+                        <div class="camera-recording board-header" style="column-gap: 0">
                             <div class="circ circ-1">
                                 <div class="circ circ-2">
                                     <div class="circ circ-3">
